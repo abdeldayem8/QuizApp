@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" href="./imgs/ideas.png">
+        <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main class="min-vh-100 d-flex flex-column justify-content-center align-items-center">
+        <div class="heading">
+        <h1 class="text-white animate__animated animate__slideInRight ">Quiz App</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <form id="quizoptions" class="animate__animated animate__slideInLeft col-lg-8 offset-lg-2 d-flex flex-column gap-3">
+                    <div class="form-floating">
+                        
+                        <select id="categoryMenu" class="form-select" aria-label="Category Select">
+                            <option selected value="">Any Category</option>
+                            <option value="9">General Knowledge</option>
+                            <option value="27">Animals</option>
+                            <option value="19">Science: Mathematics</option>
+                            <option value="18">Science: Computers</option>
+                            <option value="22">Geography</option>
+                            
+                        </select>
+                        <label for="categoryMenu">Choose Category</label>
+                    </div>
+                    <div class="form-floating">
+                        <select id="difficultyOptions" class="form-select" aria-label="difficulty Select">
+                            <option selected value="easy">Easy</option>
+                            <option value="meduim">Meduim</option>
+                            <option value="hard">Hard</option>
+                        </select>
+                        <label for="difficultyOptions">Choose Difficulty Level</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="number" class="form-control" id="questionsNumber" placeholder="Number of Questions" />
+                        <label for="QuestionsNumber">Number of Questions</label>
+                    </div>
+                    <button type="button" class="btn btn-danger rounded-pill" id="startQuiz">
+                        Start
+                    </button>
+                </form>
+                <div class="questionsContainer "></div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/index.js" type="module"></script>
+</body>
+</html>
